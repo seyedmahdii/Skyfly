@@ -25,6 +25,7 @@ const WelcomeScreen = ({ navigation }) => {
                 </Text>
                 <Button
                     title="sign up"
+                    fullWidth={false}
                     onPress={() => navigation.replace("Signup")}
                 />
             </SafeAreaView>

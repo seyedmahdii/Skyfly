@@ -5,10 +5,9 @@ import BG from "../assets/images/Auth-BG.jpg";
 import { useFonts } from "expo-font";
 import Input from "../Components/Input/Input";
 import RadioButton from "../Components/RadioButton/RadioButton";
-import * as Linking from "expo-linking";
 import Button from "../Components/Button/Button";
 
-const SignupScreen = ({ navigation }) => {
+const LoginScreen = ({ navigation }) => {
     const [loaded] = useFonts({
         BeVietnamPro: require("../assets/fonts/BeVietnamPro-Regular.ttf"),
     });
@@ -20,45 +19,28 @@ const SignupScreen = ({ navigation }) => {
         <ImageBackground source={BG} style={styles.container}>
             <SafeAreaView style={styles.box}>
                 <View style={styles.header}>
-                    <Text style={styles.title}>Create an account</Text>
+                    <Text style={styles.title}>Welcome back</Text>
                     <Text style={styles.subTitle}>
                         Start your journey with us
                     </Text>
                 </View>
 
                 <View style={styles.form}>
-                    <Input type="name" placeholder="Name" />
                     <Input type="email" placeholder="Email" />
                     <Input type="password" placeholder="Password" />
                     <View style={styles.row}>
-                        <RadioButton />
-                        <Text style={styles.termsText}>
-                            I agree to the{" "}
-                            <Text
-                                style={styles.link}
-                                onPress={() =>
-                                    Linking.openURL(
-                                        "https://seyedmahdijalali.ir"
-                                    )
-                                }
-                            >
-                                Terms of Service
-                            </Text>{" "}
-                            and{" "}
-                            <Text
-                                style={styles.link}
-                                onPress={() =>
-                                    Linking.openURL(
-                                        "https://seyedmahdijalali.ir"
-                                    )
-                                }
-                            >
-                                Privacy Policy
+                        <View style={styles.radioButonWrapper}>
+                            <RadioButton />
+                            <Text style={styles.termsText}>Remember me</Text>
+                        </View>
+                        <View>
+                            <Text style={[styles.link, styles.underline]}>
+                                Forgot password?
                             </Text>
-                        </Text>
+                        </View>
                     </View>
                     <Button
-                        title="Sign up"
+                        title="Log in"
                         fullWidth={true}
                         onPress={() => navigation.replace("Home")}
                     />
@@ -66,13 +48,13 @@ const SignupScreen = ({ navigation }) => {
 
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>
-                        Already have an account?{" "}
+                        don't have an account?{" "}
                     </Text>
                     <Text
                         style={styles.link}
-                        onPress={() => navigation.navigate("Login")}
+                        onPress={() => navigation.navigate("Signup")}
                     >
-                        Log in
+                        Sign up
                     </Text>
                 </View>
             </SafeAreaView>
@@ -80,7 +62,7 @@ const SignupScreen = ({ navigation }) => {
     );
 };
 
-export default SignupScreen;
+export default LoginScreen;
 
 const styles = StyleSheet.create({
     container: {
@@ -113,8 +95,13 @@ const styles = StyleSheet.create({
     row: {
         flexDirection: "row",
         alignItems: "center",
+        justifyContent: "space-between",
         marginVertical: 13,
         marginBottom: 20,
+    },
+    radioButonWrapper: {
+        flexDirection: "row",
+        alignItems: "center",
     },
     termsText: {
         marginLeft: 6,

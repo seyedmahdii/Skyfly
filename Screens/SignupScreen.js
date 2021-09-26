@@ -60,7 +60,7 @@ const SignupScreen = ({ navigation }) => {
                     <Button
                         title="Sign up"
                         fullWidth={true}
-                        onPress={() => navigation.replace("Home")}
+                        onPress={() => navigation.replace("Panel")}
                     />
                 </View>
 

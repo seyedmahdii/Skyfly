@@ -42,7 +42,7 @@ const LoginScreen = ({ navigation }) => {
                     <Button
                         title="Log in"
                         fullWidth={true}
-                        onPress={() => navigation.replace("Home")}
+                        onPress={() => navigation.replace("Panel")}
                     />
                 </View>
 

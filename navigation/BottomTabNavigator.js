@@ -28,7 +28,7 @@ function Tabs() {
                     tabBarIcon: (tabInfo) => (
                         <MaterialIcons
                             name="home-filled"
-                            size={tabInfo.focused ? 27 : 24}
+                            size={27}
                             color={tabInfo.focused ? "#fe6262" : "#dedede"}
                         />
                     ),
@@ -41,7 +41,7 @@ function Tabs() {
                     tabBarIcon: (tabInfo) => (
                         <Ionicons
                             name="compass"
-                            size={tabInfo.focused ? 27 : 24}
+                            size={27}
                             color={tabInfo.focused ? "#fe6262" : "#dedede"}
                         />
                     ),
@@ -54,7 +54,7 @@ function Tabs() {
                     tabBarIcon: (tabInfo) => (
                         <MaterialIcons
                             name="favorite"
-                            size={tabInfo.focused ? 26 : 24}
+                            size={26}
                             color={tabInfo.focused ? "#fe6262" : "#dedede"}
                         />
                     ),
@@ -67,7 +67,7 @@ function Tabs() {
                     tabBarIcon: (tabInfo) => (
                         <FontAwesome
                             name="user"
-                            size={tabInfo.focused ? 27 : 24}
+                            size={27}
                             color={tabInfo.focused ? "#fe6262" : "#dedede"}
                         />
                     ),

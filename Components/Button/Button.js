@@ -5,17 +5,17 @@ import styles from "./Styles";
 const CustomButton = (props) => {
     const { title = "Button title" } = props;
     return (
-        <View style={[[props.fullWidth || styles.fullWidth]]}>
-            <TouchableOpacity
-                style={styles.buttonContainer}
-                activeOpacity={0.8}
-                onPress={props.onPress}
-            >
+        <TouchableOpacity
+            style={[[props.fullWidth || styles.fullWidth]]}
+            onPress={props.onPress}
+            activeOpacity={0.8}
+        >
+            <View style={[styles.buttonContainer, [props.style]]}>
                 <Text style={[styles.buttonText, { ...props.style }]}>
                     {title}
                 </Text>
-            </TouchableOpacity>
-        </View>
+            </View>
+        </TouchableOpacity>
     );
 };
 

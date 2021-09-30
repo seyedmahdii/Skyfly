@@ -5,7 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import WelcomeScreen from "../Screens/WelcomeScreen";
 import SignupScreen from "../Screens/SignupScreen";
 import LoginScreen from "../Screens/LoginScreen";
-import HomeScreen from "../Screens/HomeScreen";
+import TicketsScreen from "../Screens/TicketsScreen";
 import BottomTabs from "./BottomTabNavigator";
 
 const Stack = createStackNavigator();
@@ -13,27 +13,12 @@ const Stack = createStackNavigator();
 const Navigation = () => {
     return (
         <NavigationContainer initialRouteName="Welcome">
-            <Stack.Navigator>
-                <Stack.Screen
-                    name="Welcome"
-                    component={WelcomeScreen}
-                    options={{ headerShown: false }}
-                />
-                <Stack.Screen
-                    name="Signup"
-                    component={SignupScreen}
-                    options={{ headerShown: false }}
-                />
-                <Stack.Screen
-                    name="Login"
-                    component={LoginScreen}
-                    options={{ headerShown: false }}
-                />
-                <Stack.Screen
-                    name="Panel"
-                    component={BottomTabs}
-                    options={{ headerShown: false }}
-                />
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen name="Welcome" component={WelcomeScreen} />
+                <Stack.Screen name="Signup" component={SignupScreen} />
+                <Stack.Screen name="Login" component={LoginScreen} />
+                <Stack.Screen name="Panel" component={BottomTabs} />
+                <Stack.Screen name="Tickets" component={TicketsScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

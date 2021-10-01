@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     },
     button: (isActive) => ({
         backgroundColor: isActive ? "#fe6262" : "#f4f4f4",
-        color: isActive ? "#fff" : "#333",
         elevation: 0,
         marginHorizontal: 4,
         paddingVertical: 6,

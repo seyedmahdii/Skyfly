@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
         backgroundColor: "#fe6262",
         paddingHorizontal: 20,
         paddingVertical: 13,
-        elevation: 2,
     },
     buttonText: {
         width: "auto",

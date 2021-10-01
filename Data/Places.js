@@ -63,7 +63,7 @@ export const places = [
     },
     {
         id: "92384udhf",
-        city: "india",
+        city: "new delhi",
         country: "india",
         continent: "asia",
         price: 100,
@@ -76,7 +76,7 @@ export const places = [
     },
     {
         id: "9fjsudhf",
-        city: "spain",
+        city: "madrid",
         country: "spain",
         continent: "europe",
         price: 150,
@@ -102,8 +102,8 @@ export const places = [
     },
     {
         id: "oalkieokd92",
-        city: "africa",
-        country: "africa",
+        city: "pretoria",
+        country: "south africa",
         continent: "africa",
         price: 58,
         images: [
@@ -115,7 +115,7 @@ export const places = [
     },
     {
         id: "oaloloieokd92",
-        city: "argentina",
+        city: "buenos aires",
         country: "argentina",
         continent: "america",
         price: 210,
@@ -127,7 +127,7 @@ export const places = [
     },
     {
         id: "aodflodf23894",
-        city: "brazil",
+        city: "brasilia",
         country: "brazil",
         continent: "america",
         price: 139,

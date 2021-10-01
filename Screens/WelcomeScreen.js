@@ -51,6 +51,6 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         textShadowColor: "gray",
         textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 5,
+        textShadowRadius: 10,
     },
 });

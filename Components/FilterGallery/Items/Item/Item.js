@@ -17,7 +17,7 @@ const Item = ({ item }) => {
     return (
         <Pressable
             style={styles.container}
-            onPress={() => navigation.navigate("Tickets")}
+            onPress={() => navigation.navigate("Destination", item)}
         >
             <ImageBackground
                 source={item.images[0]}

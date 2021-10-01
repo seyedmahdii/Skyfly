@@ -20,6 +20,10 @@ const Categories = ({ categories, filterItems }) => {
                     style={styles.button(
                         chosenCategory === category ? true : false
                     )}
+                    backgroundColor={
+                        chosenCategory === category ? "#fe6262" : "#f4f4f4"
+                    }
+                    textColor={chosenCategory === category ? "#fff" : "#333"}
                     key={ind}
                 />
             ))}

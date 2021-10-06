@@ -34,7 +34,7 @@ const Item = ({ item }) => {
                                 { fontFamily: "BeVietnamProExtraBold" },
                             ]}
                         >
-                            {item.city}
+                            {item.city.substr(0, 8)}
                         </Text>
                         <Text
                             style={[

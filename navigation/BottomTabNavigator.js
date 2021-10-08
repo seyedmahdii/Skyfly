@@ -3,9 +3,7 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import HomeScreen from "../Screens/HomeScreen";
 import SettingsScreen from "../Screens/SettingsScreen";
 import MapScreen from "../Screens/MapScreen";
-import FavoritesScreen from "../Screens/FavoritesScreen";
 import { MaterialIcons } from "@expo/vector-icons";
-import { FontAwesome } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
 const BottomTab = createMaterialBottomTabNavigator();
@@ -47,27 +45,15 @@ function Tabs() {
                     ),
                 }}
             />
-            <BottomTab.Screen
-                name="Favorites"
-                component={FavoritesScreen}
-                options={{
-                    tabBarIcon: (tabInfo) => (
-                        <MaterialIcons
-                            name="favorite"
-                            size={26}
-                            color={tabInfo.focused ? "#fe6262" : "#dedede"}
-                        />
-                    ),
-                }}
-            />
+
             <BottomTab.Screen
                 name="Settings"
                 component={SettingsScreen}
                 options={{
                     tabBarIcon: (tabInfo) => (
-                        <FontAwesome
-                            name="user"
-                            size={27}
+                        <Ionicons
+                            name="settings"
+                            size={26}
                             color={tabInfo.focused ? "#fe6262" : "#dedede"}
                         />
                     ),

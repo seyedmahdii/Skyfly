@@ -10,7 +10,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import Switch from "../Components/Switch/Switch";
 
-const SettingsScreen = () => {
+const SettingsScreen = ({ navigation }) => {
     const [loaded] = useFonts({
         BeVietnamProLight: require("../assets/fonts/BeVietnamPro-Light.ttf"),
         BeVietnamProRegular: require("../assets/fonts/BeVietnamPro-Regular.ttf"),
@@ -31,7 +31,7 @@ const SettingsScreen = () => {
                 <Button
                     title="Edit Profile"
                     arrowRight={true}
-                    onPress={() => alert("To edit profile!")}
+                    onPress={() => navigation.navigate("EditProfile")}
                     fontSize={18}
                 />
             </View>
